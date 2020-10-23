@@ -48,7 +48,7 @@ func fromCoreFileConfiguration(c *caddy.Controller) (*SynthDomain, error) {
 			switch v := c.Val(); v {
 
 			// Configuration for forward lookup zones for which to do resolution
-			case "allow":
+			case "net":
 				args := c.RemainingArgs()
 				for _, arg := range args {
 					_, cidr, err := net.ParseCIDR(arg)
