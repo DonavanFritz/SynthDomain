@@ -57,7 +57,11 @@ example.com {
 
 ## Compiling into CoreDNS
 
-To compile this with CoreDNS you can follow the [normal procedure](https://coredns.io/2017/07/25/compile-time-enabling-or-disabling-plugins/) for external plugins. 
+To compile this with CoreDNS you can follow the [normal procedure](https://coredns.io/manual/plugins/#plugins) for external plugins. 
+This plugin can be used by adding the following to `plugin.cfg`:
+```
+synthdomain:github.com/DonavanFritz/SynthDomain
+```
 
 ## FAQ
 
